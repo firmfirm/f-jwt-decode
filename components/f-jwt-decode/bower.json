@@ -1,0 +1,34 @@
+{
+  "name": "f-jwt-decode",
+  "version": "0.1.4",
+  "authors": [
+    "Martynas <martynas@firmfirm.co>"
+  ],
+  "description": "auth0/jwt-decode wrapper element, built with Polymer",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "jwt",
+    "decode",
+    "auth0"
+  ],
+  "main": "f-jwt-decode.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/firmfirm/f-jwt-decode/",
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "src/",
+    "node_modules/",
+    "bower_components/",
+    "test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.3.0",
+    "jwt-decode": "firmfirm/jwt-decode#42a9f5d"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.2.1"
+  }
+}

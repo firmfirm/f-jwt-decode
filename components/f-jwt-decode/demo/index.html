@@ -1,0 +1,39 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>jwt-decode Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../f-jwt-decode.html">
+  </head>
+  <body unresolved>
+
+    <p>An example of <code>&lt;jwt-decode&gt;</code>:</p>
+
+    <textarea style="width: 80vw; height: 20vh;">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2p3dC1pZHAuZXhhbXBsZS5jb20iLCJzdWIiOiJtYWlsdG86bWlrZUBleGFtcGxlLmNvbSIsIm5iZiI6OTQ2Njg0ODAwLCJleHAiOjEyNjIzMDQwMDAsImlhdCI6OTQ2Njg0ODAwLCJqdGkiOiJpZDEyMzQ1NiIsInR5cCI6Imh0dHBzOi8vZXhhbXBsZS5jb20vcmVnaXN0ZXIiLCJhdWQiOiJodHRwOi8vZm9vMS5jb20ifQ.mKoQqwytXUtT3Y0Obp-j973pTyOxSZBS7NAaZ3BAyqg</textarea>
+    <br />
+    <button onclick="btnClick();">Decode</button>
+    <f-jwt-decode></f-jwt-decode>
+
+    <section></section>
+
+    <script>
+      function btnClick() {
+        var el = document.querySelector('f-jwt-decode');
+        el.token = document.querySelector('textarea').value;
+        document.querySelector('section').innerHTML = JSON.stringify(el.value);
+      }
+    </script>
+
+  </body>
+</html>
