@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../f-jwt-decode.html">
+  </head>
+  <body>
+
+    <test-fixture id="f-jwt-decode-fixture">
+      <template>
+        <f-jwt-decode></f-jwt-decode>
+      </template>
+    </test-fixture>
+
+    <script>
+      describe('<f-jwt-decode>', function() {
+
+        var el;
+
+        beforeEach(function() {
+          el = fixture('f-jwt-decode-fixture');
+          jwt_decode = sinon.stub();
+        });
+
+        it('decodes provided [token] and sets it to [value]', function() {
+          var decoded = { some: 'data' };
+          jwt_decode.returns(decoded);
+          var token = 'some-token';
+          el.token = token;
+          expect(jwt_decode).to.be.calledOnce;
+          expect(el.value).to.equal(decoded);
+        });
+
+      });
+    </script>
+
+  </body>
+</html>
