@@ -25,7 +25,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.3.0",
-    "jwt-decode": "^2.0.0"
+    "jwt-decode": "#aad6e7c67d0661f2cabddbba6d975c8de3f562e1"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
