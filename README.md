@@ -2,7 +2,7 @@
 
 [auth0/jwt-decode](https://github.com/auth0/jwt-decode) wrapper element, built with Polymer.
 
-For more information and API see [Component page](https://firmfirm.github.io/f-jwt-decode/).
+For more information and API see [Component page](https://firmfirm.github.io/f-jwt-decode/) (**temporarily not working**).
 
 ## Dependencies
 
