@@ -1,6 +1,5 @@
 {
   "name": "f-jwt-decode",
-  "version": "2.0.0",
   "authors": [
     "Martynas <martynas@firmfirm.co>"
   ],
@@ -24,18 +23,12 @@
     "test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#2.0-preview",
-    "jwt-decode": "firmfirm/jwt-decode#^2.0.0"
+    "polymer": "~2.0.0",
+    "jwt-decode": "~2.2.0"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#v1",
-    "test-fixture": "PolymerElements/test-fixture#custom-elements-v1",
-    "web-component-tester": "Polymer/web-component-tester#^4.3.5"
-  },
-  "resolutions": {
-    "test-fixture": "custom-elements-v1",
-    "webcomponentsjs": "v1",
-    "polymer": "2.0-preview"
+    "iron-component-page": "~2.0.0",
+    "webcomponentsjs": "~1.0.0",
+    "web-component-tester": "~6.0.0"
   }
 }
