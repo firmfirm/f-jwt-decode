@@ -29,7 +29,10 @@ Example:
      */
      decode: function(token) {
        if (!token) return null;
-       return jwt_decode(token);
+       const decode = typeof global !== 'undefined'
+         ? global.window.jwt_decode
+         : window.jwt_decode;
+       return decode(token);
      },
 
      _tokenChanged: function(newValue) {
