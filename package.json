@@ -1,6 +1,6 @@
 {
   "name": "f-jwt-decode",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "auth0/jwt-decode wrapper element, built with Polymer",
   "scripts": {
     "test": "polymer test --npm",
