@@ -1,5 +1,3 @@
-<script>
-
 window.FInterface = window.FInterface || {};
 
 /**
@@ -26,5 +24,3 @@ FInterface.JwtDecoder = {
     }
   }
 }
-
-</script>
